@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: cursive;
+}
+
+
+/* This part contains navbar */
+.navbar{
+    background-color: #2fd2ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.75rem 1rem;
+    color:white;
+}
+
+.navbar-left{
+    display: flex;
+    align-items:center;
+    gap: 1.5rem;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color:aqua;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    text-decoration:none;
+    border-radius: 0.35rem;
+}
+
+.nav-link{
+    display: flex;
+    gap:1.5rem;
+}
+.nav-links a{
+    color: white;
+text-decoration:none;
+}
+
+.nav-links a:hover{
+    opacity:0.9;
+}
+
+.search-container{
+    position:relative;
+    max-width:300px;
+    flex-grow:1;
+}
+.search-box{
+    width:100%;
+    background-color: rgb(93, 180, 255);
+    border:none;
+    color:rgb(255, 255, 255);
+    padding: 0.5rem 2.5rem;
+    font-size: 0.875rem;
+    border-radius: 34px;
+}
+
+.search-box:focus{
+    outline:none;
+    box-shadow:2px 4px;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.navbar-right a{
+    color:white;
+    text-decoration:none;
+}
+
+
+
+
+
+/* This part contains the first section after navbar */
+
+.mid-section{
+    text-align: center;
+    line-height: 2rem;
+    margin-top:34px;
+}
+
+.btn-started{
+    background-color: #2fd2ff;
+    color:white;
+    text-align:center;
+    padding:12px 12px;
+    cursor:pointer;
+    margin-top:40px;
+    margin-right:20px;
+}
+
+.btn-started:hover{
+    background-color: #5dabff;
+}
+.btn-download{
+    background-color: #c8c8c8;
+    color:black;
+    text-align: center;
+    padding:12px 12px;
+    cursor:pointer;
+    margin-bottom: 40px;
+}
+.btn-download:hover{
+    background-color: #adb5bd;
+}
+
+
+
+
+/* This part contains the card */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 15px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.section-title:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.section-subtitle {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #6c757d;
+    font-size: 1.25rem;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.feature-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.feature-description {
+    text-align: center;
+    color: #6c757d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This part contains the footer */
+.footer {
+    background-color: #212529;
+    padding: 3rem 0;
+    color: #f8f9fa;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Column layouts */
+.col {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-sec {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+/* Sajilo branding section */
+.s-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #5dabff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    color: #adb5bd;
+    margin-bottom: 1rem;
+}
+
+/* Links styling */
+.footer-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* License text */
+.license {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
